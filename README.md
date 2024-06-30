@@ -18,11 +18,11 @@ Verifies the login by checking the page title.
 1. JDK installed (Java Development Kit)
 2. Selenium WebDriver library
 3. ChromeDriver executable
-4. IDE for Java development (e.g., Eclipse, IntelliJ IDEA)
+4. IDE for Java development (Eclipse)
 5. Setup Instructions
 
 # Clone the repository
-git clone https://github.com/yourusername/orangehrm-login-automation.git
+ git clone https://github.com/yourusername/orangehrm-login-automation.git
 
 # Set up WebDriver
 Download the ChromeDriver from the official website and place it in a known location.
