@@ -31,12 +31,11 @@ public static void main(String[] args) {
 		System.out.println("Test Successfull"+ exp);
 	}
 		else {
+	System.out.println("Test not Successful ");
+
+
+		}
+	d.close();
 	
-
-
-
-	d.quit();
-	
-}
 }
 }
