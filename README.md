@@ -21,8 +21,7 @@ Verifies the login by checking the page title.
 4. IDE for Java development (Eclipse)
 5. Setup Instructions
 
-# Clone the repository
- git clone https://github.com/yourusername/orangehrm-login-automation.git
+
 
 # Set up WebDriver
 Download the ChromeDriver from the official website and place it in a known location.
