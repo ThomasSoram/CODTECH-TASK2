@@ -51,4 +51,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 # Acknowledgements
  - Selenium
  - OrangeHRM.
-#Feel free to contribute or raise issues if you encounter any problems!#
+-Feel free to contribute or raise issues if you encounter any problems!-
