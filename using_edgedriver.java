@@ -28,7 +28,7 @@ public static void main(String[] args) {
 	System.out.println("Actual title" +act);
 	System.out.println("Expected title"+ exp);
 	if(exp.equals(act)) {
-		System.out.println("Test Successfull"+ exp);
+		System.out.println("Test Successful"+ exp);
 	}
 		else {
 	System.out.println("Test not Successful ");
