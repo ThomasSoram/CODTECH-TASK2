@@ -37,15 +37,16 @@ public class UsingChrome {
     	if(exp.equals(act)) {
     		System.out.println("Test Successfull"+ exp);
     	}
-    		else {
-    	
+    		
+    	else {
+	System.out.println("Test not Successful ");
 
 
-
-    	d.quit();
-    	
+		}
+	d.close();
+	
     		}
     	}
-    }
+    
 
 
