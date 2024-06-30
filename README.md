@@ -31,7 +31,7 @@ Download the ChromeDriver from the official website and place it in a known loca
  - System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver-win64\\chromedriver.exe");
 
 # Run the script:
-Execute the UsingChrome class from your IDE or command line to see the automation in action.
+Execute the given class from your IDE or command line to see the automation in action.
 
 # Code Overview
 #The script performs the following steps
@@ -50,5 +50,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 # Acknowledgements
  - Selenium
- - OrangeHRM
+ - OrangeHRM.
 #Feel free to contribute or raise issues if you encounter any problems!#
