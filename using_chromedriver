@@ -1,8 +1,11 @@
 package hello;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 
 
@@ -13,36 +16,36 @@ public class UsingChrome {
         System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver-win64\\chromedriver.exe");
 
         // Create a new instance of the Chrome driver
-        WebDriver d = new ChromeDriver();
-
         
-            // Navigate to facebook
-           d.get("https://www.facebook.com/");
-           
-        	// Enter value and click
-            d.findElement(By.name("email")).sendKeys("Tony");
-        	d.findElement(By.name("pass")).sendKeys("Tony@123");
-        	d.findElement(By.name("login")).click();
-        	
+        WebDriver d =new ChromeDriver();
+    	d.manage().window().maximize();
+    	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    	
+    	d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-            // Get the actual title of the page
-            String actualTitle = d.getTitle();
-            String expectedTitle = "facebook";
 
-            System.out.println("Expected Title: " + expectedTitle);
-            System.out.println("Actual Title: " + actualTitle);
+    	// Enter value and click
+    	d.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
+    	d.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
+    	d.findElement(By.xpath("//button[@type='submit']")).click();
 
-            // Get the current URL
-            String currentUrl = d.getCurrentUrl();
-            System.out.println("Current URL: " + currentUrl);
 
-            // Verify if the title matches
-            if (actualTitle.equals(expectedTitle)) {
-                System.out.println("Test verified");
-            } else {
-                System.out.println("Test not verified");
-            }
-        
-        }
+    	String act=d.getTitle();
+    	String exp="OrangeHRM";
+    	System.out.println("Actual title" +act);
+    	System.out.println("Expected title"+ exp);
+    	if(exp.equals(act)) {
+    		System.out.println("Test Successfull"+ exp);
+    	}
+    		else {
+    	
+
+
+
+    	d.quit();
+    	
+    		}
+    	}
     }
+
 
